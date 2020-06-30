@@ -10,6 +10,6 @@ import org.springframework.data.rest.core.annotation.RestResource;
 public interface UsuarioDao extends PagingAndSortingRepository<Usuario, Long> {
 
   @RestResource(path="buscar-username")
-  Usuario findByUsername(@Param("nombre") String username);
+  Usuario findByUsername(@Param("username") String username);
 
 }
